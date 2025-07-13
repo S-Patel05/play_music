@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+body {
+  background: linear-gradient(270deg, #fd8181, #8787f0, #f7c582);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s infinite;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.container {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-card {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 36px;
+  text-align: center;
+  font-weight: 700;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  padding-top: 10px;
+}
+
+input:focus {
+  border-color: #1db954;
+  outline: none;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-bottom: 30px;
+}
+
+.forgot-password a {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+button {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(45deg, #ff6b6b, #6b6bff);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s ease-in-out;
+}
+
+#btn:hover {
+  background: linear-gradient(45deg, #6b6bff, #ff6b6b);
+  transform: scale(1.05);
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  color: #b3b3b3;
+}
+
+.divider-line {
+  flex: 1;
+  height: 1px;
+  background-color: #282828;
+}
+
+.divider-text {
+  padding: 0 10px;
+  font-size: 12px;
+}
+
+.social-login {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border-radius: 30px;
+  background-color: transparent;
+  border: 1px solid #727272;
+  font-weight: 600;
+  font-size: 14px;
+  gap: 10px;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+.signup-link a {
+  color: white;
+  text-decoration: underline;
+}
+a {
+  color: #00fff7; /* or any bright shade */
+}
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+  color: #b3b3b3;
+}
+/* Ensure the password container is positioned correctly */
+.form-group {
+  position: relative;
+}
+
+/* Style the password toggle button */
+.password-toggle {
+  position: absolute;
+  text-align: center;
+  width: 60px;
+  right: 0px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #b3b3b3;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 5px;
+}
+.g_id_signin {
+  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.2));
+  transition: all 0.3s ease-in-out;
+}
+
+.g_id_signin:hover {
+  filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.5));
+}
+/* Fix input field issue */
+input {
+  width: 100%;
+  padding: 14px;
+  padding-right: 50px; /* Add space for the button */
+  border-radius: 4px;
+  border: 1px solid #727272;
+  background-color: #121212;
+  color: white;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+@media (max-width: 480px) {
+  .container {
+    padding: 20px 15px;
+  }
+
+  .login-card {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}

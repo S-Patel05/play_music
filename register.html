@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - Play Music</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-card">
+        <h1>Register to Play music</h1>
+
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="email">Username</label>
+            <input type="text" id="uname" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="text" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="pwd" name="password" required />
+          </div>
+          <div class="form-group">
+            <button type="submit" id="btn">Register</button>
+          </div>
+          <div>
+            <p>Alrady register please <a href="index.html"> login</a></p>
+          </div>
+        </form>
+
+        <div class="divider">
+          <div class="divider-line"></div>
+          <div class="divider-text">OR</div>
+          <div class="divider-line"></div>
+        </div>
+       
+        <!-- Google Sign-In -->
+        <div
+          id="g_id_onload"
+          data-client_id="1074645484477-ucj3okp4na5j4g2j7fe882nupr4g7avd.apps.googleusercontent.com"
+          data-callback="handleGoogleRegister"
+        ></div>
+        <div class="g_id_signin" data-type="standard"></div>
+
+        <script
+          src="https://accounts.google.com/gsi/client"
+          async
+          defer
+        ></script>
+        
+      </div>
+    </div>
+  </body>
+  <script src="register.js"></script>
+</html>

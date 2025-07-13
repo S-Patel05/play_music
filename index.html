@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Play Music</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <!-- Corrected Google OAuth Script -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="login-card">
+            <h1>Log in to Play Music <img src="logo.png" alt="" width="30px"></h1>
+
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="text" id="email" name="email" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="pwd" name="password" required />
+                </div>
+
+                <button type="submit" id="btn">LOG IN</button>
+                <div class="social-login">
+                    <p>Not registered yet? <a href="register.html">Register here</a></p>
+                </div>
+            </form>
+
+            <div class="divider">
+                <div class="divider-line"></div>
+                <div class="divider-text">OR</div>
+                <div class="divider-line"></div>
+            </div>
+
+            <!-- Fixed Google Sign-In Implementation -->
+            <div id="g_id_onload"
+                data-client_id="1074645484477-ucj3okp4na5j4g2j7fe882nupr4g7avd.apps.googleusercontent.com"
+                data-callback="handleCredentialResponse">
+            </div>
+            <div class="g_id_signin" data-type="standard"></div>
+        </div>
+    </div>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="login.js"></script>
+</body>
+</html>
